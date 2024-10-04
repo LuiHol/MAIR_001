@@ -1,0 +1,92 @@
+Model: NNmodel
+              precision    recall  f1-score   support
+
+      negate       1.00      0.97      0.99        69
+      affirm       0.99      0.99      0.99       180
+    thankyou       1.00      0.99      1.00       474
+     reqalts       0.96      0.97      0.97       279
+       hello       1.00      1.00      1.00        14
+     request       0.99      1.00      1.00       972
+     restart       1.00      1.00      1.00         2
+      repeat       1.00      0.67      0.80         3
+         bye       0.88      1.00      0.93        35
+      inform       0.99      0.98      0.99      1532
+     reqmore       1.00      1.00      1.00         1
+         ack       1.00      0.40      0.57         5
+        null       0.94      1.00      0.97       232
+        deny       0.86      1.00      0.92         6
+     confirm       0.74      0.77      0.76        22
+
+    accuracy                           0.99      3826
+   macro avg       0.96      0.92      0.92      3826
+weighted avg       0.99      0.99      0.99      3826
+
+Model: DTmodel
+              precision    recall  f1-score   support
+
+      negate       1.00      0.99      0.99        69
+      affirm       0.99      1.00      1.00       180
+    thankyou       1.00      1.00      1.00       474
+     reqalts       0.97      0.96      0.97       279
+       hello       1.00      1.00      1.00        14
+     request       0.99      1.00      1.00       972
+     restart       1.00      0.50      0.67         2
+      repeat       1.00      0.67      0.80         3
+         bye       0.97      1.00      0.99        35
+      inform       0.99      0.97      0.98      1532
+     reqmore       1.00      1.00      1.00         1
+         ack       0.60      0.60      0.60         5
+        null       0.85      0.99      0.92       232
+        deny       0.75      1.00      0.86         6
+     confirm       0.78      0.82      0.80        22
+
+    accuracy                           0.98      3826
+   macro avg       0.93      0.90      0.90      3826
+weighted avg       0.98      0.98      0.98      3826
+
+Model: Majority Baseline
+              precision    recall  f1-score   support
+
+      negate       0.00      0.00      0.00        28
+      affirm       0.00      0.00      0.00      1156
+    thankyou       0.00      0.00      0.00       266
+     reqalts       0.00      0.00      0.00       172
+       hello       0.00      0.00      0.00        27
+     request       0.00      0.00      0.00        93
+     restart       0.40      1.00      0.57     10160
+      repeat       0.00      0.00      0.00       435
+         bye       0.00      0.00      0.00      1612
+      inform       0.00      0.00      0.00        33
+     reqmore       0.00      0.00      0.00      1747
+         ack       0.00      0.00      0.00         5
+        null       0.00      0.00      0.00      6494
+        deny       0.00      0.00      0.00        14
+     confirm       0.00      0.00      0.00      3259
+
+    accuracy                           0.40     25501
+   macro avg       0.03      0.07      0.04     25501
+weighted avg       0.16      0.40      0.23     25501
+
+Model: Rule Based
+              precision    recall  f1-score   support
+
+      negate       0.78      0.25      0.38        28
+      affirm       0.24      0.87      0.37      1156
+    thankyou       0.50      0.01      0.01       266
+     reqalts       0.00      0.01      0.00       172
+       hello       0.68      0.63      0.65        27
+     request       0.83      0.42      0.56        93
+     restart       0.76      1.00      0.86     10160
+      repeat       0.90      0.63      0.74       435
+         bye       0.99      0.74      0.84      1612
+      inform       0.86      0.94      0.90        33
+     reqmore       0.78      0.03      0.05      1747
+         ack       0.83      1.00      0.91         5
+        null       0.98      0.43      0.60      6494
+        deny       1.00      0.79      0.88        14
+     confirm       0.99      0.04      0.08      3259
+
+    accuracy                           0.61     25501
+   macro avg       0.74      0.52      0.52     25501
+weighted avg       0.83      0.61      0.60     25501
+
